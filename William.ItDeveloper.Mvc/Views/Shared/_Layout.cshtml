@@ -14,7 +14,7 @@
 	<meta name="application-name" content="" />
 
 	<!-- Import google fonts - Heading first/ text second -->
-	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Css files -->
 	<!-- Icons -->
@@ -68,27 +68,17 @@
 
 	<!-- Javascripts -->
 	<!-- Load pace first -->
-	<script src="plugins/core/pace/pace.min.js"></script>
+	<script src="~/bundles/firstpage.min.js"></script>
 
-	<!-- Important javascript libs(put in all pages) -->
-	<a href="~/js/libs/jquery-2.1.1.min.map">~/js/libs/jquery-2.1.1.min.map</a>
 	<script src="~/js/libs/jquery-2.1.1.min.js"></script>
-
 	<script src="~/js/libs/jquery-ui-1.10.4.min.js"></script>
 
+	<script src="~/bundles/allpages.min.js"></script>
+
+	<!-- Important javascript libs(put in all pages) -->
 	<script src="~/bundles/core.min.js"></script>
-
 	<script src="~/js/libs/date.js"></script>
-
-	<script src="~/bundles/jquery.flot.min.js"></script>
 	<script src="~/bundles/core.dashboard.min.js"></script>
-
-	<script src="~/plugins/misc/vectormaps/jquery-jvectormap-1.2.2.min.js"></script>
-	<script src="~/plugins/misc/vectormaps/maps/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="~/plugins/misc/countto/jquery.countto.js"></script>
-	<script src="~/js/jquery.dynamic.js"></script>
-	<script src="~/js/main.js"></script>
-	<script src="~/js/pages/dashboard.js"></script>
 
 	@await RenderSectionAsync("Scripts", required: false)
 </body>

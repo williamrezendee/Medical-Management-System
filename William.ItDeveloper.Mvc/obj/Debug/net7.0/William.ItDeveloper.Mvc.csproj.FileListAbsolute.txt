@@ -28,3 +28,4 @@ C:\dev\William.ItDeveloper\William.ItDeveloper.Mvc\obj\Debug\net7.0\refint\Willi
 C:\dev\William.ItDeveloper\William.ItDeveloper.Mvc\obj\Debug\net7.0\William.ItDeveloper.Mvc.pdb
 C:\dev\William.ItDeveloper\William.ItDeveloper.Mvc\obj\Debug\net7.0\William.ItDeveloper.Mvc.genruntimeconfig.cache
 C:\dev\William.ItDeveloper\William.ItDeveloper.Mvc\obj\Debug\net7.0\ref\William.ItDeveloper.Mvc.dll
+C:\dev\William.ItDeveloper\William.ItDeveloper.Mvc\bin\Debug\net7.0\libman.json

@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\blank.html"
     },
     {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\allpages.min.js",
+      "PackagePath": "staticwebassets\\bundles\\allpages.min.js"
+    },
+    {
       "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\core.dashboard.min.js",
       "PackagePath": "staticwebassets\\bundles\\core.dashboard.min.js"
     },
@@ -57,8 +61,20 @@
       "PackagePath": "staticwebassets\\bundles\\css.core.min.css"
     },
     {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\firstpage.min.js",
+      "PackagePath": "staticwebassets\\bundles\\firstpage.min.js"
+    },
+    {
       "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\jQuery.Flot.min.js",
       "PackagePath": "staticwebassets\\bundles\\jQuery.Flot.min.js"
+    },
+    {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\jquery.js",
+      "PackagePath": "staticwebassets\\bundles\\jquery.js"
+    },
+    {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\bundles\\jquery.min.js",
+      "PackagePath": "staticwebassets\\bundles\\jquery.min.js"
     },
     {
       "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\buttons.html",
@@ -3775,6 +3791,14 @@
     {
       "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\register.html",
       "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\scripts\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\scripts\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.unobtrusive-ajax.min.js"
     },
     {
       "Id": "C:\\dev\\William.ItDeveloper\\William.ItDeveloper.Mvc\\wwwroot\\sliders.html",
