@@ -1,0 +1,43 @@
+[
+  {
+    "outputFileName": "wwwroot/bundle/jQuery.Flot.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/charts/flot/excanvas.js",
+      "wwwroot/plugins/charts/flot/jquery.colorhelpers.js",
+      "wwwroot/plugins/charts/flot/jquery.flot.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle/core.min.js",
+    "inputFiles": [
+      "wwwroot/js/bootstrap/bootstrap.js",
+      "wwwroot/js/libs/modernizr.custom.js",
+      "wwwroot/js/libs/respond.min.js",
+      "wwwroot/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js",
+      "wwwroot/plugins/core/slimscroll/jquery.slimscroll.js",
+      "wwwroot/plugins/core/velocity/jquery.velocity.min.js",
+      "wwwroot/plugins/core/quicksearch/jquery.quicksearch.js",
+      "wwwroot/plugins/core/fastclick/fastclick.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle/core.dashboard.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/charts/progressbars/progressbar.js",
+      "wwwroot/plugins/charts/sparklines/jquery.sparkline.js",
+      "wwwroot/plugins/ui/notify/jquery.gritter.js",
+      "wwwroot/plugins/ui/waypoint/waypoints.js",
+      "wwwroot/plugins/ui/weather/skyicons.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bundle/css.core.min.css",
+    "inputFiles": [
+      "wwwroot/css/main.css",
+      "wwwroot/css/bootstrap.css",
+      "wwwroot/css/custom.css",
+      "wwwroot/css/icons.css",
+      "wwwroot/css/plugins.css"
+    ]
+  }
+]
