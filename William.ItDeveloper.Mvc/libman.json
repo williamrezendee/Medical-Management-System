@@ -3,10 +3,5 @@
     "defaultProvider": "cdnjs",
     "defaultDestination": "wwwroot/bundles/",
     "libraries": [
-        {
-            "library": "jquery@2.1.1",
-            "files": [ "jquery.js", "jquery.min.js" ],
-            "destination": "wwwroot/bundles/"
-        }
     ]
 }
