@@ -4,7 +4,9 @@ using William.ItDeveloper.Mvc.Models;
 
 namespace William.ItDeveloper.Mvc.Controllers
 {
-	public class HomeController : Controller
+	[Route("")]
+	[Route("home-page")]
+	public class HomeController : BaseController
 	{
 		private readonly ILogger<HomeController> _logger;
 
@@ -13,21 +15,28 @@ namespace William.ItDeveloper.Mvc.Controllers
 			_logger = logger;
 		}
 
+		[Route("index")]
 		public IActionResult Index()
 		{
 			return View();
 		}
 
+		[Route("")]
+		[Route("dashboard")]
 		public IActionResult Dashboard()
 		{
 			return View();
 		}
 
+		[Route("privacy")]
+		[Route("privacy-policy")]
 		public IActionResult Privacy()
 		{
 			return View();
 		}
 
+		[Route("errors")]
+		[Route("errors-control")]
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{
