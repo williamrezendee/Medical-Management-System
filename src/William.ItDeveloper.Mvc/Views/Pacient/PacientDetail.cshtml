@@ -1,0 +1,76 @@
+﻿@using William.ItDeveloper.Mvc.Controllers;
+@model Pacient
+
+@{
+	ViewData["Title"] = "Pacient Details";
+}
+
+<div class="row">
+	<div class="panel panel-heading">
+		<h3>Pacient Details</h3>
+	</div>
+
+	<div class="panel panel-body">
+		<div class="col-md-12">
+			<form asp-controller="Pacient" asp-action="AddPacient">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+				<input type="hidden" name="Id" value="@Model.Id" id="Id" />
+
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel panel-heading">
+							<h3>Registration Data</h3>
+						</div>
+					</div>
+					<ul>
+						<li><b>Id: </b><span style="font-size: 18px; color: #ed5353; font-stretch:expanded;">@Model.Id</span></li>
+						<li><b>Name: </b><span style="font-size: 18px; color: #ed5353; font-stretch:expanded;">@Model.Name</span></li>
+						<li><b>CPF: </b><span style="font-size: 18px; color: #ed5353; font-stretch:expanded;">@Model.Cpf</span></li>
+					</ul>
+				</div>
+
+				<div class="row">
+					<div class="panel panel-success">
+						<div class="panel papanel-heading">
+							<h3>Pacient Phones</h3>
+						</div>
+					</div>
+					<hr/>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Phone Id</th>
+								<th>Phone Type</th>
+								<th>Number</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var item in Model.Phones)
+							{
+								<tr>
+									<td>@item.Id</td>
+									<td>@item.PhoneType</td>
+									<td>@item.Number</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+
+				<div class="form-group">
+					<a href="javascript:void();" class="btn btn-info">Edit Phone</a>
+					<a asp-controller="Pacient" asp-action="Index" class="btn btn-success">Back to Pacients</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	<script src="/bundles/dataTables.min.js"></script>
+	<script src="~/bundles/dashboard.min.js"></script>
+}

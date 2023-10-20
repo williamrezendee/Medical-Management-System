@@ -1,0 +1,123 @@
+﻿<!doctype html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>@ViewData["Title"] - EAD - ITDeveloper</title>
+    <!-- Mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="application-name" content="" />
+
+    <link href="~/bundles/core.min.css" rel="stylesheet" />
+
+    <!-- Css files -->
+    <!-- ESTILOS PERSONALIZADOS Carlos /-->
+    <link href="/css/william/notes.css" rel="stylesheet" />
+
+    <!-- INI - ESTILOS GRÁFICOS MORRIS Carlos /-->
+    <link href="/content/morris.css" rel="stylesheet" />
+
+    <link href="/content/css/select2.css" rel="stylesheet" />
+    <link href="/content/css/select2-bootstrap.css" rel="stylesheet" />
+    <link href="/content/css/bootstrap-tagsinput.css" rel="stylesheet" />
+    @* Adaptado por Carlos de make-Admin *@
+    <link href="/content/william/styleCooperchip.css" rel="stylesheet" />
+
+
+    <!--/ Carlos BoxInit  -->
+    <link href="/scripts/william/boxinit/css/style.css" rel="stylesheet" />
+
+    <link href="/content/PagedList.css" rel="stylesheet" type="text/css" />
+
+    <link href="/css/icons.css" rel="stylesheet" />
+    <!-- Bootstrap stylesheets (included template modifications) -->
+    <link href="/css/bootstrap-evolumed.css" rel="stylesheet" />
+    <!-- Plugins stylesheets (all plugin custom css) -->
+    <link href="/css/plugins.css" rel="stylesheet" />
+
+    <link href="/css/main.css" rel="stylesheet" />
+    <!-- Custom stylesheets ( Put your own changes here ) -->
+    <link href="/css/custom.css" rel="stylesheet" />
+
+    <!--/ CSS da tabela nova -->
+    <link href="/content/jquery.dataTables.css" rel="stylesheet" />
+    <link href="/content/dataTables.tableTools.css" rel="stylesheet" />
+
+
+    <script src="/scripts/william/modernizr-custom.js"></script>
+
+
+    <link href="~/css/william/CicleProfile.css" rel="stylesheet" />
+</head>
+
+<body>
+    <partial name="PartialViews/_navbar" />
+
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- .page-sidebar -->
+        <aside id="sidebar" class="page-sidebar hidden-md hidden-sm hidden-xs">
+            <div class="sidebar-inner">
+                <div class="sidebar-scrollarea">
+
+@*                    <partial name="PartialViews/_profile_left_sidebar" />
+*@
+                    <div class="sidebar-panel">
+                        <h5 class="sidebar-panel-title">Navigation</h5>
+                    </div>
+
+                    <div class="side-nav">
+                        <ul class="nav">
+
+                            <partial name="PartialViews/_left_menu_list" />
+
+                        </ul>
+                    </div>
+
+                    <partial name="PartialViews/_left_bottom_menu" />
+
+
+                </div>
+            </div>
+
+        </aside>
+
+        <partial name="PartialViews/_rightsidebar" />
+
+        <!-- .page-content -->
+        <div class="page-content sidebar-page right-sidebar-page clearfix">
+            <div class="page-content-wrapper">
+                <div class="page-content-inner">
+
+                    @RenderBody()
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <partial name="PartialViews/_footer" />
+
+
+    <!-- Back to top -->
+    <div id="back-to-top">
+        <a href="#">Back to the top</a>
+    </div>
+
+    <partial name="PartialViews/_scripts" />
+
+
+    @RenderSection("scripts", required: false)
+
+    <script src="~/bundles/dashboard.min.js"></script>
+
+</body>
+</html>

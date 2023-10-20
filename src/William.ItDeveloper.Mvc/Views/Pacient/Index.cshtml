@@ -1,0 +1,62 @@
+﻿@using William.ItDeveloper.Mvc.Controllers;
+@model IEnumerable<Pacient>
+
+<h1>Pacient Management</h1>
+<hr />
+<p>
+	What is Lorem Ipsum?
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+	It has survived not only five centuries, but also the leap into electronic typesetting,
+	remaining essentially unchanged.
+	It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+	and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+<div class="row">
+	<div class="panel panel-body">
+		<div class="col-12">
+			<div class="row">
+				<div class="panel panel-success">
+					<div class="panel panel-heading">
+						<h3>Pacients List</h3>
+					</div>
+				</div>
+
+				<hr />
+
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Name</th>
+							<th>Cpf</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var pacient in Model)
+						{
+							<tr>
+								<td>@pacient.Id</td>
+								<td>@pacient.Name</td>
+								<td>@pacient.Cpf</td>
+								<td>
+									<a class="btn btn-warning" asp-route-id="@pacient.Name" 
+															asp-controller="Pacient"
+															asp-action="PacientDetail"
+															title="Pacient Detail">
+															Details					
+														</a>
+									<a class="btn btn-info" href="javascript:void();" title="Edit Pacient">Edit</a>
+									<a class="btn btn-danger" href="javascript:void();" title="Delete Pacient">Delete</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
